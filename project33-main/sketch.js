@@ -40,10 +40,10 @@ function setup() {
 }
  
 function draw() {
-  background(color(mouseX+100,mouseY+100,mouseY/mouseX+200));   
+  background("black");
   textSize(35)
   text("Score : "+score,20,40);
-  fill("black");
+  fill("white");
   //text(mouseX + "," + mouseY, 20, 50);
   textSize(35)
   text(" 500 ", 5, 550);
@@ -62,7 +62,6 @@ function draw() {
   if ( gameState =="end") {
     
     textSize(100);
-    fill(0)
     text("GameOver", 150, 250);
     //return
   }
